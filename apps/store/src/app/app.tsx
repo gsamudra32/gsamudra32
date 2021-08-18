@@ -30,6 +30,7 @@ export const App = () => {
       ...state,
       loadingState: 'loading',
     }));
+    console.log("...")
     fetch('/api/games')
       .then((x) => x.json())
       .then((res) => {
